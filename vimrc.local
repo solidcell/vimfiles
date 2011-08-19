@@ -1,0 +1,40 @@
+let mapleader = ","
+
+let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+
+source ~/.vim/vimrc
+
+"remove scrollbars and such
+set guioptions-=r
+
+if has("gui_running") && ( has("gui_mac") || has("gui_macvim") )
+   set guifont=Menlo:h13
+   set columns=300
+endif
+
+:set list!
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+"Invisible character colors
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#3a4a59
+
+nmap <leader>r <Plug>RubyTestRun
+nmap <Leader>R <Plug>RubyFileRun
+nmap <Leader>/ <Plug>RubyTestRunLast
+
+"key mapping for window resizing
+map < <C-w><
+map > <C-w>>
+map - <C-w>-
+map + <C-w>+
+
+map <leader>[ :NERDTreeFind<CR>
+
+nmap <leader>v :tabedit $MYVIMRC<CR>
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
