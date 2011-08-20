@@ -4,12 +4,18 @@ let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 
 source ~/.vim/vimrc
 
+call pathogen#helptags()
+
 "remove scrollbars and such
-set guioptions-=r
+set guioptions=e
+
+set noequalalways
 
 if has("gui_running") && ( has("gui_mac") || has("gui_macvim") )
-   set guifont=Menlo:h13
-   set columns=300
+  set guifont=Menlo:h13
+  set columns=300
+  set lines=300
+  set fuoptions=maxvert,maxhorz
 endif
 
 :set list!
@@ -31,8 +37,12 @@ map > <C-w>>
 map - <C-w>-
 map + <C-w>+
 
+"NERDTree stuff
 map <leader>[ :NERDTreeFind<CR>
+hi directory term=bold gui=bold
+let NERDTreeIgnore=['\.swp$']
 
+".vimrc stuff
 nmap <leader>v :tabedit $MYVIMRC<CR>
 " Source the vimrc file after saving it
 if has("autocmd")
