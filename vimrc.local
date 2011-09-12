@@ -6,6 +6,9 @@ source ~/.vim/vimrc
 
 call pathogen#helptags()
 
+"show a modified notification in the statusline
+set statusline+=%m
+
 "remove scrollbars and such
 set guioptions=e
 
@@ -27,15 +30,24 @@ set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#3a4a59
 
+"character to show when wrap is set
+set showbreak=↪
+
 nmap <leader>r <Plug>RubyTestRun
 nmap <Leader>R <Plug>RubyFileRun
 nmap <Leader>/ <Plug>RubyTestRunLast
 
 "key mapping for window resizing
-map < <C-w><
-map > <C-w>>
-map - <C-w>-
-map + <C-w>+
+nmap < <C-w><
+nmap > <C-w>>
+nmap - <C-w>-
+nmap + <C-w>+
+
+"cursor movement while in insert mode
+imap <C-h> <C-o>h
+imap <C-j> <C-o>j
+imap <C-k> <C-o>k
+imap <C-l> <C-o>l
 
 "NERDTree stuff
 map <leader>[ :NERDTreeFind<CR>
