@@ -37,6 +37,20 @@ nmap <leader>r <Plug>RubyTestRun
 nmap <Leader>R <Plug>RubyFileRun
 nmap <Leader>/ <Plug>RubyTestRunLast
 
+"give Command-T a more specific mapping so you don't have to wait like with <leader>t
+nnoremap <leader>tc :CommandT<CR>
+
+"fold settings
+set foldnestmax=10
+
+"managing windows
+nmap <leader>v :vs<CR>
+nmap <leader>s :sp<CR>
+nmap <leader>x :x<CR>
+
+"jump to the quickfix
+nmap <leader>co :copen<CR>
+
 "key mapping for window resizing
 nmap < <C-w><
 nmap > <C-w>>
@@ -55,7 +69,7 @@ hi directory term=bold gui=bold
 let NERDTreeIgnore=['\.swp$']
 
 ".vimrc stuff
-nmap <leader>v :tabedit $MYVIMRC<CR>
+nmap <leader>vim :tabedit $MYVIMRC<CR>
 " Source the vimrc file after saving it
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
