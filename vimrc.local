@@ -43,10 +43,32 @@ nnoremap <leader>tc :CommandT<CR>
 "fold settings
 set foldnestmax=10
 
-"managing windows
+"splitting and closing windows
 nmap <leader>v :vs<CR>
 nmap <leader>s :sp<CR>
 nmap <leader>x :x<CR>
+
+"swapping buffers between windows
+"http://stackoverflow.com/questions/2586984/how-can-i-swap-positions-of-two-open-files-in-splits-in-vim
+function! MarkWindowSwap()
+  let g:markedWinNum = winnr()
+endfunction
+function! DoWindowSwap()
+  "Mark destination
+  let curNum = winnr()
+  let curBuf = bufnr( "%" )
+  exe g:markedWinNum . "wincmd w"
+  "Switch to source and shuffle dest->source
+  let markedBuf = bufnr( "%" )
+  "Hide and open so that we aren't prompted and keep history
+  exe 'hide buf' curBuf
+  "Switch to dest and shuffle source->dest
+  exe curNum . "wincmd w"
+  "Hide and open so that we aren't prompted and keep history
+  exe 'hide buf' markedBuf
+endfunction
+nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
+nmap <silent> <leader>pw :call DoWindowSwap()<CR>
 
 "jump to the quickfix
 nmap <leader>co :copen<CR>
