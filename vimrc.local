@@ -89,6 +89,13 @@ imap <C-l> <C-o>l
 map <leader>[ :NERDTreeFind<CR>
 hi directory term=bold gui=bold
 let NERDTreeIgnore=['\.swp$']
+"remove the mapping from the main vimrc that causes pausing after a 'w'
+unmap wm
+
+"ensure that tabs are 2 spaces
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
 ".vimrc stuff
 nmap <leader>vim :tabedit $MYVIMRC<CR>
