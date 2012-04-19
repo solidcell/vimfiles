@@ -89,6 +89,7 @@ imap <C-l> <C-o>l
 map <leader>[ :NERDTreeFind<CR>
 hi directory term=bold gui=bold
 let NERDTreeIgnore=['\.swp$']
+
 "remove the mapping from the main vimrc that causes pausing after a 'w'
 unmap wm
 
@@ -97,9 +98,14 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 
-".vimrc stuff
-nmap <leader>vim :tabedit $MYVIMRC<CR>
-" Source the vimrc file after saving it
+"set the pwd to the current file's directory
+nmap <leader>cd :cd %:h<CR>
+
+"open the vimrc file
+nmap <leader>vim :vsplit $MYVIMRC<CR>
+"source the vimrc file
+nmap <leader>src :source $MYVIMRC<CR>
+"source the vimrc file after saving it
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
