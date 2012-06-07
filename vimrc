@@ -6,7 +6,7 @@ filetype on
 filetype off
 
 "load pathogen managed plugins
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
@@ -260,7 +260,12 @@ else
         set term=gnome-256color
         colorscheme railscasts
     else
-        colorscheme default
+        if $TERM == 'xterm'
+            set term=xterm-256color
+            colorscheme railscasts
+        else
+            colorscheme default
+        endif
     endif
 endif
 
@@ -269,7 +274,6 @@ endif
 " nmap <silent> <Leader>q <Plug>PeepOpen
 
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
-nnoremap <silent> <C-f> :call FindInNERDTree()<CR>
 
 "make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>
@@ -428,3 +432,12 @@ imap {<CR> {}<ESC>i<CR><ESC>O
 " NERDTree settings
 nmap wm :NERDTree<cr>
 let NERDTreeIgnore=['\.swp$']
+
+nnoremap <Esc>A <up>
+nnoremap <Esc>B <down>
+nnoremap <Esc>C <right>
+nnoremap <Esc>D <left>
+inoremap <Esc>A <up>
+inoremap <Esc>B <down>
+inoremap <Esc>C <right>
+inoremap <Esc>D <left>
