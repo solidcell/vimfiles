@@ -15,11 +15,13 @@ set guioptions=e
 set noequalalways
 
 if has("gui_running") && ( has("gui_mac") || has("gui_macvim") )
-  set guifont=Menlo:h13
-  set columns=300
-  set lines=300
   set fuoptions=maxvert,maxhorz
+  set transparency=0
 endif
+set guifont=Menlo:h13
+set columns=300
+set lines=300
+colors vividchalk
 
 :set list!
 " Shortcut to rapidly toggle `set list`
@@ -37,8 +39,7 @@ nmap <leader>r <Plug>RubyTestRun
 nmap <Leader>R <Plug>RubyFileRun
 nmap <Leader>/ <Plug>RubyTestRunLast
 
-"give Command-T a more specific mapping so you don't have to wait like with <leader>t
-nnoremap <leader>tc :CommandT<CR>
+nnoremap <leader>t :CtrlP<CR>
 
 "fold settings
 set foldnestmax=10
