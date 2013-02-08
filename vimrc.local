@@ -17,13 +17,12 @@ set noequalalways
 if has("gui_running") && ( has("gui_mac") || has("gui_macvim") )
   set fuoptions=maxvert,maxhorz
   set transparency=0
+  set guifont=Menlo:h13
 endif
-set guifont=Menlo:h13
-set columns=300
-set lines=300
+set columns=2000
+set lines=2000
 colors vividchalk
 
-:set list!
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
@@ -48,6 +47,9 @@ set foldnestmax=10
 nmap <leader>v :vs<CR>
 nmap <leader>s :sp<CR>
 nmap <leader>x :x<CR>
+
+"update the ctags
+nmap <leader>tag :!ctags -R .<CR>
 
 "swapping buffers between windows
 "http://stackoverflow.com/questions/2586984/how-can-i-swap-positions-of-two-open-files-in-splits-in-vim
@@ -93,6 +95,8 @@ let NERDTreeIgnore=['\.swp$']
 
 "remove the mapping from the main vimrc that causes pausing after a 'w'
 unmap wm
+"remove the mapping from vim-ruby-run
+autocmd VimEnter * unmap <C-E>
 
 "ensure that tabs are 2 spaces
 set tabstop=2
