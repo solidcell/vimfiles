@@ -93,10 +93,22 @@ map <leader>[ :NERDTreeFind<CR>
 hi directory term=bold gui=bold
 let NERDTreeIgnore=['\.swp$']
 
-"remove the mapping from the main vimrc that causes pausing after a 'w'
+"remove the mapping from vimrc that causes pausing after a 'w'
 unmap wm
+"remove the mappings from vimrc that causes the cursor to move after <Esc> and another key
+nunmap <Esc>A
+nunmap <Esc>B
+nunmap <Esc>C
+nunmap <Esc>D
+iunmap <Esc>A
+iunmap <Esc>B
+iunmap <Esc>C
+iunmap <Esc>D
 "remove the mapping from vim-ruby-run
 autocmd VimEnter * unmap <C-E>
+
+"allow the mouse to make selections and then copy
+set mouse=v
 
 "ensure that tabs are 2 spaces
 set tabstop=2
@@ -105,6 +117,10 @@ set softtabstop=2
 
 "set the pwd to the current file's directory
 nmap <leader>cd :cd %:h<CR>
+
+"don't product backup files. They're more annoying than they're worth.
+set nobackup
+set noswapfile
 
 "open the vimrc file
 nmap <leader>vim :vsplit $MYVIMRC<CR>
