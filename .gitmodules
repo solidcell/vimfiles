@@ -202,3 +202,6 @@
 [submodule "bundle/vim-ruby-run"]
 	path = bundle/vim-ruby-run
 	url = https://github.com/stjernstrom/vim-ruby-run
+[submodule "bundle/vim-arduino-ino"]
+	path = bundle/vim-arduino-ino
+	url = https://github.com/jplaut/vim-arduino-ino
