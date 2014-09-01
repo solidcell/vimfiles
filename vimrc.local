@@ -21,7 +21,7 @@ if has("gui_running") && ( has("gui_mac") || has("gui_macvim") )
 endif
 set columns=2000
 set lines=2000
-colors vividchalk
+colors solidcell
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
