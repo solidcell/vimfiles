@@ -48,6 +48,10 @@ nmap <leader>v :vs<CR>
 nmap <leader>s :sp<CR>
 nmap <leader>x :x<CR>
 
+"open new split panes to right and bottom
+set splitbelow
+set splitright
+
 "update the ctags
 nmap <leader>tag :!ctags -R .<CR>
 
