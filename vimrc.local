@@ -122,9 +122,13 @@ set softtabstop=2
 "set the pwd to the current file's directory
 nmap <leader>cd :cd %:h<CR>
 
-"don't product backup files. They're more annoying than they're worth.
+"don't produce backup files. They're more annoying than they're worth.
 set nobackup
 set noswapfile
+
+"highlight the column that's considered the maximum length
+let &colorcolumn='80'
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 "open the vimrc file
 nmap <leader>vim :vsplit $MYVIMRC<CR>
