@@ -208,3 +208,6 @@
 [submodule "bundle/emmet-vim"]
 	path = bundle/emmet-vim
 	url = git@github.com:mattn/emmet-vim.git
+[submodule "bundle/vim-eunuch"]
+	path = bundle/vim-eunuch
+	url = git@github.com:tpope/vim-eunuch.git
