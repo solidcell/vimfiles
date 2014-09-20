@@ -1,0 +1,72 @@
+****** NOT Keeping
+NrrRgn # opens a range in a separate buffer
+clojure
+emmet-vim # abbreviation expansion
+grails-vim
+scala
+vim-golang
+jade
+liftweb
+
+****** Keeping
+CSApprox # helps colorscheme support in terminal
+NERD_commenter # for comments
+NERD_tree
+ZoomWin # zoom into one window and restore
+ack
+bufexplorer
+camelcasemotion # ,w ,b etc. to move camelCase and snake_case
+ctrp # fuzzy finder
+endwise # ends structures, like 'end' and '}'
+fugitive # git commands
+gist-vim # work with Github gists
+webapi-vim # required by gist-vim
+git # syntax, indent, and filetype plugins
+gundo # undo tree explorer
+html5.vim #  html indent, syntax, etc.
+markdown # markdown indent, syntax, etc.
+matchit # better % matching (try removing it to see if it was useful)
+rails # rails help (update it to see if it's better at `gf` and :A)
+rubytest # running tests (integration with sport, guard, etc.)
+scss-syntax
+snipmate # snippet expansions (start learning some useful ones)
+supertab # tab completion
+surround # auto insert pair for a surrounding character
+
+****** Maybe Keeping
+abolish # auto correct words, replace words with variants (plural v singular), camelCase<->snake_case
+cucumber # check it out in lumos_rails
+git-vim # git commands. keep even though using fugitive?
+grep-vim # use this or Ack?
+haml # haml stuff?  nothing in the readme, but check the source
+ragtag # smart wrapping of many different filetypes
+securemodelines # what?
+
+****** Unchecked
+syntastic
+taglist_45
+textile
+unimpaired
+vim-arduino-ino
+vim-autoclose
+vim-buffergator
+vim-bundler
+vim-capybara
+vim-coffee-script
+vim-colors-solarized
+vim-easymotion
+vim-eunuch
+vim-indexed-search
+vim-jquery
+vim-preview
+vim-ruby
+vim-ruby-run
+vim-ruby-sinatra
+vim-rvm
+vim-slim
+vim-textobj-rubybloc
+vim-textobj-user
+vim-tmux-navigator
+vim-vroom
+vim-yankring
+vividchalk
