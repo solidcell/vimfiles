@@ -1,7 +1,5 @@
 let mapleader = ","
 
-let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
-
 source ~/.vim/vimrc
 
 call pathogen#helptags()
