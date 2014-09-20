@@ -1,12 +1,8 @@
-****** NOT Keeping
-NrrRgn # opens a range in a separate buffer
-clojure
-emmet-vim # abbreviation expansion
-grails-vim
-scala
-vim-golang
-jade
-liftweb
+****** Want
+buftabs # see if it's worth getting
+# the matching pair char highlight should be more prominent on the char under cursor
+# git +/- next to linenums
+vim-scripts/YankRing
 
 ****** Keeping
 CSApprox # helps colorscheme support in terminal
@@ -32,6 +28,17 @@ scss-syntax
 snipmate # snippet expansions (start learning some useful ones)
 supertab # tab completion
 surround # auto insert pair for a surrounding character
+syntastic # syntax checking
+vim-arduino-ino
+vim-bundler # use :Bopen
+vim-capybara # snippets and ftdetect
+vim-eunuch # wrappers for shell commands like :Move and :Rename
+vim-indexed-search # shows you which match you're currently on "x of y"
+vim-jquery # syntax file for jQuery and CSS selectors
+vim-textobj-rubybloc # easily select the contents of a block/method
+vim-textobj-user # required by vim-text-obj-rubybloc
+vim-tmux-navigator
+vividchalk # colorscheme that I base solidcell off of
 
 ****** Maybe Keeping
 abolish # auto correct words, replace words with variants (plural v singular), camelCase<->snake_case
@@ -41,32 +48,29 @@ grep-vim # use this or Ack?
 haml # haml stuff?  nothing in the readme, but check the source
 ragtag # smart wrapping of many different filetypes
 securemodelines # what?
+taglist_45 # gutter tag explorer (can't seem to get it to work)
+unimpaired # helpful mappings.  if you'll use any, then keep it
+vim-autoclose # does this do the same thing as `surround` bundle?
+vim-buffergator # try it out and see if it's worth keeping
+vim-coffee-script # keep if you can get it to work
+vim-easymotion # keep if you can get it to work
+vim-preview # keep if you can get it to work and it's good
+vim-ruby # see if removing it messes with anything
+vim-ruby-run # how's it for running a random script?
+vim-vroom # rubytest doesn't already do this stuff?
 
-****** Unchecked
-syntastic
-taglist_45
-textile
-unimpaired
-vim-arduino-ino
-vim-autoclose
-vim-buffergator
-vim-bundler
-vim-capybara
-vim-coffee-script
-vim-colors-solarized
-vim-easymotion
-vim-eunuch
-vim-indexed-search
-vim-jquery
-vim-preview
-vim-ruby
-vim-ruby-run
-vim-ruby-sinatra
-vim-rvm
-vim-slim
-vim-textobj-rubybloc
-vim-textobj-user
-vim-tmux-navigator
-vim-vroom
-vim-yankring
-vividchalk
+****** NOT Keeping
+NrrRgn # opens a range in a separate buffer
+clojure
+emmet-vim # abbreviation expansion
+grails-vim
+scala
+vim-golang
+jade
+liftweb
+textile # textile markup plugin
+vim-colors-solarized # don't need this colorscheme
+vim-ruby-sinatra # I don't use sinatra
+vim-rvm # I don't use rvm
+vim-slim # I don't use slim
+vim-yankring # it's out of date.  using vim-scripts/YankRing instead
