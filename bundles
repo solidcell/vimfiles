@@ -59,7 +59,8 @@ vim-ruby # see if removing it messes with anything
 vim-ruby-run # how's it for running a random script?
 vim-vroom # rubytest doesn't already do this stuff?
 
-****** NOT Keeping
+****** Removed
+Align
 NrrRgn # opens a range in a separate buffer
 clojure
 emmet-vim # abbreviation expansion
