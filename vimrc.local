@@ -133,6 +133,10 @@ highlight ColorColumn ctermbg=235 guibg=#2c2d27
 "leave cursor on the same line after a yank
 vmap y y`]
 
+"vim-gist settings
+let g:gist_clip_command = 'pbcopy'
+let g:gist_post_private = 1
+
 "open the vimrc file
 nmap <leader>vim :vsplit $MYVIMRC<CR>
 "source the vimrc file
