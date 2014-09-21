@@ -29,6 +29,7 @@ snipmate # snippet expansions (start learning some useful ones)
 supertab # tab completion
 surround # auto insert pair for a surrounding character
 syntastic # syntax checking
+textile # textile markup plugin
 vim-arduino-ino
 vim-bundler # use :Bopen
 vim-capybara # snippets and ftdetect
@@ -69,7 +70,6 @@ scala
 vim-golang
 jade
 liftweb
-textile # textile markup plugin
 vim-colors-solarized # don't need this colorscheme
 vim-ruby-sinatra # I don't use sinatra
 vim-rvm # I don't use rvm
