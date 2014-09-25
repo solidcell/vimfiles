@@ -1,7 +1,6 @@
 ****** Want
 buftabs # see if it's worth getting
 # the matching pair char highlight should be more prominent on the char under cursor
-# git +/- next to linenums
 vim-scripts/YankRing
 
 ****** Keeping
@@ -59,19 +58,3 @@ vim-preview # keep if you can get it to work and it's good
 vim-ruby # see if removing it messes with anything
 vim-ruby-run # how's it for running a random script?
 vim-vroom # rubytest doesn't already do this stuff?
-
-****** Removed
-Align
-NrrRgn # opens a range in a separate buffer
-clojure
-emmet-vim # abbreviation expansion
-grails-vim
-scala
-vim-golang
-jade
-liftweb
-vim-colors-solarized # don't need this colorscheme
-vim-ruby-sinatra # I don't use sinatra
-vim-rvm # I don't use rvm
-vim-slim # I don't use slim
-vim-yankring # it's out of date.  using vim-scripts/YankRing instead
