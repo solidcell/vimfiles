@@ -161,9 +161,6 @@
 [submodule "bundle/vim-arduino-ino"]
 	path = bundle/vim-arduino-ino
 	url = https://github.com/jplaut/vim-arduino-ino
-[submodule "bundle/vim-tmux-navigator"]
-	path = bundle/vim-tmux-navigator
-	url = git@github.com:christoomey/vim-tmux-navigator.git
 [submodule "bundle/vim-eunuch"]
 	path = bundle/vim-eunuch
 	url = git@github.com:tpope/vim-eunuch.git
@@ -176,3 +173,6 @@
 [submodule "bundle/YankRing.vim"]
 	path = bundle/YankRing.vim
 	url = git@github.com:solidcell/YankRing.vim.git
+[submodule "bundle/vim-tmux-navigator"]
+	path = bundle/vim-tmux-navigator
+	url = git@github.com:solidcell/vim-tmux-navigator.git
