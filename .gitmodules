@@ -167,9 +167,6 @@
 [submodule "bundle/textile"]
 	path = bundle/textile
 	url = http://github.com/timcharper/textile.vim.git
-[submodule "bundle/vim-gitgutter"]
-	path = bundle/vim-gitgutter
-	url = git@github.com:airblade/vim-gitgutter.git
 [submodule "bundle/YankRing.vim"]
 	path = bundle/YankRing.vim
 	url = git@github.com:solidcell/YankRing.vim.git
