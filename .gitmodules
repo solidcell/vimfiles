@@ -173,3 +173,6 @@
 [submodule "bundle/vim-tmux-navigator"]
 	path = bundle/vim-tmux-navigator
 	url = git@github.com:solidcell/vim-tmux-navigator.git
+[submodule "bundle/ag"]
+	path = bundle/ag
+	url = https://github.com/rking/ag.vim
