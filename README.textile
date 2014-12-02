@@ -17,6 +17,7 @@ h1. Bundled Plugins
 * "supertab":http://www.vim.org/scripts/script.php?script_id=1643 - pseudo auto-complete with tab
 * "surround":http://www.vim.org/scripts/script.php?script_id=1697 - add, change, remove surrounding parentheses, brackets, quotes, etc
 * "syntastic":http://www.vim.org/scripts/script.php?script_id=2736 - checks for syntax errors in many languages
+* "tagbar":http://majutsushi.github.io/tagbar/ - a class outline viewer for Vim
 * "textile":http://www.vim.org/scripts/script.php?script_id=2305 - syntax highlight for Textile
 * "vim-bundler":https://github.com/tpope/vim-bundler - Bundler support for Vim
 * "vim-buffergator":https://github.com/jeetsukumaran/vim-buffergator - Vim plugin to list, select and switch between buffers.
