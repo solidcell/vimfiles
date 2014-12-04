@@ -51,7 +51,7 @@ set splitbelow
 set splitright
 
 "update the ctags
-nmap <leader>tag :!ctags -R .<CR>
+nmap <leader>ctags :!ctags -R .<CR>
 
 "swapping buffers between windows
 "http://stackoverflow.com/questions/2586984/how-can-i-swap-positions-of-two-open-files-in-splits-in-vim
@@ -76,7 +76,7 @@ nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
 nmap <silent> <leader>pw :call DoWindowSwap()<CR>
 
 "jump to the quickfix
-nmap <leader>co :copen<CR>
+nmap <leader>q :copen<CR>
 
 "key mapping for window resizing
 nmap < <C-w><
