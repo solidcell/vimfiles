@@ -128,6 +128,12 @@ highlight ColorColumn ctermbg=235 guibg=#2c2d27
 "leave cursor on the same line after a yank
 vmap y y`]
 
+"YankRing mapping
+nnoremap <silent> & :YRShow<CR>
+
+"Gundo mapping
+noremap <silent> U :GundoToggle<CR>
+
 "vim-gist settings
 let g:gist_clip_command = 'pbcopy'
 let g:gist_post_private = 1
