@@ -79,7 +79,7 @@ nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
 nmap <silent> <leader>pw :call DoWindowSwap()<CR>
 
 "jump to the quickfix
-nmap <leader>co :copen<CR>
+nmap <leader>q :copen<CR>
 
 "key mapping for window resizing
 nmap < <C-w><
@@ -120,9 +120,6 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 
-"set the pwd to the current file's directory
-nmap <leader>cd :cd %:h<CR>
-
 "don't produce backup files. They're more annoying than they're worth.
 set nobackup
 set noswapfile
@@ -133,6 +130,12 @@ highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 "leave cursor on the same line after a yank
 vmap y y`]
+
+"YankRing mapping
+nnoremap <silent> & :YRShow<CR>
+
+"Gundo mapping
+noremap <silent> U :GundoToggle<CR>
 
 "vim-gist settings
 let g:gist_clip_command = 'pbcopy'
@@ -159,12 +162,3 @@ endif
 nnoremap \ :Ag<SPACE>
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
-
-"open the vimrc file
-nmap <leader>vim :vsplit $MYVIMRC<CR>
-"source the vimrc file
-nmap <leader>src :source $MYVIMRC<CR>
-"source the vimrc file after saving it
-if has("autocmd")
-  autocmd bufwritepost .vimrc source $MYVIMRC
-endif
