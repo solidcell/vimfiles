@@ -50,12 +50,6 @@ nmap <leader>x :x<CR>
 set splitbelow
 set splitright
 
-" vim-easytags
-" set easytags to asynchronously update
-let g:easytags_async = 1
-" update tags recursively at current directory
-nmap <leader>tag :UpdateTags -R<CR>
-
 "swapping buffers between windows
 "http://stackoverflow.com/questions/2586984/how-can-i-swap-positions-of-two-open-files-in-splits-in-vim
 function! MarkWindowSwap()
