@@ -38,6 +38,9 @@ nmap <Leader>/ <Plug>RubyTestRunLast
 
 nnoremap <leader>t :CtrlP<CR>
 
+" tags
+set tags=.git/tags,tags
+
 "fold settings
 set foldnestmax=10
 
